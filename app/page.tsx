@@ -17,9 +17,9 @@ export default function Home() {
       <Header />
       <main id="main">
         <Hero />
+        <Paths />
         <TrustBand />
         <Features />
-        <Paths />
         <Services />
         <Why />
         <People />
