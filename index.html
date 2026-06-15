@@ -88,6 +88,7 @@
         <a href="#services">Services</a>
         <a href="#why">Why us</a>
         <a href="#people">Our people</a>
+        <a href="#visit">Visit</a>
         <a href="#contact">Contact</a>
       </nav>
 
@@ -279,6 +280,97 @@
 
         <div class="people-grid" id="peopleGrid">
           <!-- Cards injected by JS from a single data source so headshots are a one-line swap -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LOCAL / MAP ============ -->
+    <section class="local" id="visit">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow eyebrow--center"><span class="dot"></span> Proudly local</p>
+          <h2>Right here on Keilor Road.</h2>
+          <p class="section-sub">We've been part of Essendon since 1983 — we know these streets, and the families and businesses on them. Drop in, or book a time that suits you.</p>
+        </header>
+
+        <div class="local__inner">
+          <div class="local__map">
+            <!-- Google Maps MOCK. To go live, replace the .map-mock block with an
+                 <iframe> Google Maps embed for "Hughes Legal, 333 Keilor Rd, Essendon". -->
+            <div class="map-mock" role="img" aria-label="Map showing Hughes Legal at Level 1, 333 Keilor Road, Essendon VIC 3040">
+              <svg class="map-mock__roads" viewBox="0 0 600 420" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+                <defs>
+                  <linearGradient id="land" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0" stop-color="#eef4f3"/>
+                    <stop offset="1" stop-color="#e3edec"/>
+                  </linearGradient>
+                </defs>
+                <rect width="600" height="420" fill="url(#land)"/>
+                <!-- park / green block -->
+                <rect x="40" y="250" width="150" height="120" rx="10" fill="#dcefe4"/>
+                <rect x="430" y="40" width="140" height="95" rx="10" fill="#dcefe4"/>
+                <!-- water -->
+                <path d="M0 60 C 120 30, 180 110, 320 80 C 460 50, 540 120, 600 90 L600 0 L0 0 Z" fill="#d4ecf7"/>
+                <!-- roads -->
+                <g stroke="#ffffff" stroke-linecap="round" fill="none">
+                  <path d="M-20 180 C 160 150, 360 230, 640 190" stroke-width="22"/>
+                  <path d="M300 -20 C 270 140, 350 280, 320 460" stroke-width="18"/>
+                  <path d="M-20 320 L 640 300" stroke-width="12"/>
+                  <path d="M120 -20 L 150 460" stroke-width="9"/>
+                  <path d="M480 -20 L 470 460" stroke-width="9"/>
+                </g>
+                <g stroke="#cdd9da" stroke-width="1.5" fill="none" opacity=".7">
+                  <path d="M-20 180 C 160 150, 360 230, 640 190"/>
+                  <path d="M300 -20 C 270 140, 350 280, 320 460"/>
+                </g>
+                <!-- "Keilor Rd" label along the main road -->
+                <text x="120" y="172" font-family="Lato, sans-serif" font-size="13" font-weight="700" fill="#8a97a0">Keilor Rd</text>
+              </svg>
+
+              <div class="map-pin" aria-hidden="true">
+                <span class="map-pin__pulse"></span>
+                <svg width="36" height="46" viewBox="0 0 36 46"><path d="M18 0C8 0 0 8 0 18c0 13 18 28 18 28s18-15 18-28C36 8 28 0 18 0z" fill="#e8843c"/><circle cx="18" cy="18" r="7" fill="#fff"/></svg>
+              </div>
+
+              <div class="map-card">
+                <span class="map-card__mark">hl</span>
+                <span>
+                  <strong>Hughes Legal</strong>
+                  Level 1, 333 Keilor Rd, Essendon
+                </span>
+              </div>
+
+              <a class="map-open" href="https://www.google.com/maps/search/?api=1&query=Hughes+Legal+333+Keilor+Road+Essendon+VIC+3040" target="_blank" rel="noopener">
+                <span aria-hidden="true">📍</span> Open in Google Maps
+              </a>
+
+              <span class="map-badge">Map preview · live Google Map embed goes here</span>
+            </div>
+          </div>
+
+          <div class="local__info">
+            <div class="local__card">
+              <h3>Visit our Essendon office</h3>
+              <p class="local__addr">Level 1, 333 Keilor Road<br />Essendon VIC 3040</p>
+              <p class="local__hours"><span aria-hidden="true">🕑</span> Monday–Friday · 8:30am–5:00pm</p>
+              <div class="local__actions">
+                <a href="https://www.google.com/maps/dir/?api=1&destination=Hughes+Legal+333+Keilor+Road+Essendon+VIC+3040" target="_blank" rel="noopener" class="btn btn--primary">Get directions</a>
+                <a href="tel:+61393754226" class="btn btn--ghost">Call the office</a>
+              </div>
+            </div>
+
+            <h4 class="local__sub">Suburbs we serve</h4>
+            <ul class="suburbs">
+              <li>Essendon</li>
+              <li>Aberfeldie</li>
+              <li>Ascot Vale</li>
+              <li>Moonee Ponds</li>
+              <li>Niddrie</li>
+              <li>Strathmore</li>
+              <li>Keilor</li>
+              <li>Airport West</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
