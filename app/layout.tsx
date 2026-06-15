@@ -1,11 +1,19 @@
 import type { Metadata } from "next";
-import { Lato } from "next/font/google";
+import { Lato, Newsreader } from "next/font/google";
 import "./globals.css";
 
 const lato = Lato({
   subsets: ["latin"],
   weight: ["400", "700", "900"],
   variable: "--font-lato",
+  display: "swap",
+});
+
+const newsreader = Newsreader({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  style: ["normal", "italic"],
+  variable: "--font-newsreader",
   display: "swap",
 });
 

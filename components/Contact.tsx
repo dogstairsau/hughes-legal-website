@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { PHONE_DISPLAY, PHONE_HREF, EMAIL } from "@/lib/team";
+import Icon from "@/components/icons";
 
 export default function Contact() {
   const [sent, setSent] = useState(false);
@@ -27,11 +28,11 @@ export default function Contact() {
     <section className="contact" id="contact">
       <div className="container contact__inner">
         <div className="contact__intro">
-          <p className="eyebrow"><span className="dot" /> Speak with a local lawyer</p>
+          <span className="kicker">Speak with a local lawyer</span>
           <h2>Tell us about your matter.</h2>
           <p className="section-sub">No jargon, no pressure — just clear advice on where you stand and what comes next.</p>
 
-          <p className="contact__promise"><span aria-hidden="true">✓</span> We&apos;ll be in touch within <strong>one business day</strong>.</p>
+          <p className="contact__promise"><span className="ic"><Icon name="check" size={18} /></span> We&apos;ll be in touch within <strong>one business day</strong>.</p>
 
           <ul className="contact__details">
             <li><span className="contact__label">Call</span><a href={PHONE_HREF}>{PHONE_DISPLAY}</a></li>

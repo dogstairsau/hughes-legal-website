@@ -15,15 +15,10 @@ const LINKS = [
 function BrandMark() {
   return (
     <a className="brand" href="#top" aria-label="Hughes Legal — home">
-      <span className="brand__mark" aria-hidden="true">
-        <svg width="46" height="46" viewBox="0 0 46 46" role="img">
-          <rect x="1" y="1" width="44" height="44" rx="11" fill="#15b89a" />
-          <text x="23" y="33" textAnchor="middle" fontFamily="Lato, sans-serif" fontWeight="900" fontSize="24" fill="#ffffff">hl</text>
-        </svg>
-      </span>
+      <span className="brand__mark" aria-hidden="true">HL</span>
       <span className="brand__words">
-        <span className="brand__name">hughes legal</span>
-        <span className="brand__tag">lawyers + consultants</span>
+        <span className="brand__name">Hughes Legal</span>
+        <span className="brand__tag">Lawyers &amp; Consultants</span>
       </span>
     </a>
   );
@@ -50,10 +45,10 @@ export default function Header() {
       <div className="utility">
         <div className="container utility__inner">
           <div className="utility__left">
-            <a href={`mailto:${EMAIL}`} className="utility__item"><span aria-hidden="true">✉</span> {EMAIL}</a>
-            <span className="utility__item utility__item--hours"><span aria-hidden="true">🕑</span> Mon–Fri · 8:30am–5:00pm</span>
+            <a href={`mailto:${EMAIL}`} className="utility__item">{EMAIL}</a>
+            <span className="utility__item utility__item--hours">Mon–Fri · 8:30am–5:00pm</span>
           </div>
-          <a href={PHONE_HREF} className="utility__phone"><span aria-hidden="true">📞</span> {PHONE_DISPLAY}</a>
+          <a href={PHONE_HREF} className="utility__phone">{PHONE_DISPLAY}</a>
         </div>
       </div>
 
@@ -68,8 +63,7 @@ export default function Header() {
           </nav>
 
           <div className="header__cta">
-            <a href={PHONE_HREF} className="btn btn--ghost btn--phone"><span aria-hidden="true">📞</span> {PHONE_DISPLAY}</a>
-            <a href="#contact" className="btn btn--accent">Enquire online</a>
+            <a href="#contact" className="btn btn--teal">Enquire online</a>
           </div>
 
           <button
